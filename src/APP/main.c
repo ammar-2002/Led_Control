@@ -1,8 +1,7 @@
-#include "REG.h"
+#include "DIO.h"
 int main(){
-	PORTF.B.BIT_0 = 1;
-	PORTF.B.BIT_1 = 1;
-	PORTF.B.BIT_2 = 1;
+	PIN_DIR(PF2,OUTPUT);
+	PIN_DATA(PF2,HIGH);
 	while(1){
 		
 	}
